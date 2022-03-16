@@ -1,4 +1,4 @@
-from requests import post
+from requests import post, get
 
 request_alisa = {
   "request": {
@@ -15,5 +15,6 @@ request_alisa = {
   "version": "1.0"
 }
 
-print(post('http://localhost:5000/post',
-           json=request_alisa).json())
+print(post('https://test-alisa-md.herokuapp.com/post', json=request_alisa).json())
+#print(post('http://127.0.0.1:5000/post', json=request_alisa).json())
+
