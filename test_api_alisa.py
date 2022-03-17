@@ -1,4 +1,5 @@
 from requests import post, get
+import json
 
 request_alisa = {
   "request": {
@@ -15,6 +16,6 @@ request_alisa = {
   "version": "1.0"
 }
 
-print(post('https://test-alisa-md.herokuapp.com/post', json=request_alisa).json())
-#print(post('http://127.0.0.1:5000/post', json=request_alisa).json())
-
+#print(post('https://test-alisa-md.herokuapp.com', json=request_alisa).json())
+#print(post('http://127.0.0.1:5000/', json=request_alisa).json())
+print(post('http://7c67-5-175-109-98.ngrok.io/', json=request_alisa).json())
